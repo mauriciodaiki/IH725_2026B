@@ -1,0 +1,29 @@
+// Variables
+$color-principal: #026c7c;
+$color-texto: white;
+$espaciado: 16px;
+
+// Mixin reutilizable
+@mixin tarjeta {
+  padding: $espaciado;
+  border-radius: 8px;
+  background-color: $color-principal;
+}
+
+// Estilos y anidamiento
+.contenedor {
+  max-width: 600px;
+  margin: 40px auto;
+
+  h1 {
+    color: $color-principal;
+  }
+
+  .tarjeta {
+    @include tarjeta;
+
+    p {
+      color: $color-texto;
+    }
+  }
+}
