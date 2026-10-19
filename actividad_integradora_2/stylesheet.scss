@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700;900&display=swap');
+
+
+$offwhite: #EEE8D6;
+$darkblue: #022933;
+$blue:     #0076A3;
+$yellow:   #FFBA00;
+$orange:   #F39856;
+$red:      #D14348;
+
+$color-main:        $darkblue;
+$color-background:  $offwhite;
+$color-headlines:   $red;
+
+$color-btn-text:      #ffffff;
+$color-btn-principal: $darkblue;
+$color-btn-alerta:    $red;
+$color-btn-error:     $blue;
+
+$font-main: 'Merriweather', Helvetica, sans-serif;
+$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+
+
+@mixin color-boton($color) {
+  background-color: $color;
+  border-color: $color;
+
+  &:hover {
+    background-color: darken($color, 10%);
+    border-color: darken($color, 10%);
+  }
+}
+
+%btn-base {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+
+  font-family: $font-highlight;
+  font-size: 1.7rem;
+  color: $color-btn-text;
+
+  border: 2px solid transparent;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.8rem;
+  font-family: $font-main;
+
+  color: $color-main;
+  background-color: $color-background;
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#botones {
+  padding: 4rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-highlight;
+  color: $color-headlines;
+}
+
+.btn-principal {
+  @extend %btn-base;
+  @include color-boton($color-btn-principal);
+}
+
+.btn-alerta {
+  @extend %btn-base;
+  @include color-boton($color-btn-alerta);
+}
+
+.btn-error {
+  @extend %btn-base;
+  @include color-boton($color-btn-error);
+}

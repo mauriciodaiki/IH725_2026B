@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700;900&display=swap");
+.btn-error, .btn-alerta, .btn-principal {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-family: "Bree Serif", Helvetica, sans-serif;
+  font-size: 1.7rem;
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+.btn-error:hover, .btn-alerta:hover, .btn-principal:hover {
+  transform: translateY(-2px);
+}
+.btn-error:active, .btn-alerta:active, .btn-principal:active {
+  transform: translateY(0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Merriweather", Helvetica, sans-serif;
+  color: #022933;
+  background-color: #EEE8D6;
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#botones {
+  padding: 4rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bree Serif", Helvetica, sans-serif;
+  color: #D14348;
+}
+
+.btn-principal {
+  background-color: #022933;
+  border-color: #022933;
+}
+.btn-principal:hover {
+  background-color: rgb(0.0754716981, 1.5471698113, 1.9245283019);
+  border-color: rgb(0.0754716981, 1.5471698113, 1.9245283019);
+}
+
+.btn-alerta {
+  background-color: #D14348;
+  border-color: #D14348;
+}
+.btn-alerta:hover {
+  background-color: rgb(180.7692307692, 44.2307692308, 49.0384615385);
+  border-color: rgb(180.7692307692, 44.2307692308, 49.0384615385);
+}
+
+.btn-error {
+  background-color: #0076A3;
+  border-color: #0076A3;
+}
+.btn-error:hover {
+  background-color: rgb(0, 81.0797546012, 112);
+  border-color: rgb(0, 81.0797546012, 112);
+}/*# sourceMappingURL=stylesheet.css.map */

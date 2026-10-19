@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Merriweather", Helvetica, sans-serif;
+  color: #022933;
+  background-color: #EEE8D6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bree Serif", Helvetica, sans-serif;
+  color: #D14348;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.25;
+}
+
+nav ul {
+  padding-left: 40px;
+}
+nav ul li {
+  margin: 2px 0;
+}
+nav ul li a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.presentacion {
+  margin-top: 20px;
+}
+.presentacion p {
+  color: #022933;
+}
+
+#media {
+  margin-top: 20px;
+}
+#media h1 {
+  margin-bottom: 20px;
+}
+#media .media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#media .media .item {
+  overflow: hidden;
+  padding: 10px 0;
+  border-top: 1px dotted #D14348;
+}
+#media .media .item a {
+  display: block;
+  color: #022933;
+  text-decoration: none;
+}
+#media .media .item a img {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin-right: 12px;
+}
+#media .media .item a h2 {
+  margin: 0;
+  color: #0076A3;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+#media .media .item a p {
+  margin: 3px 0 0;
+  color: #022933;
+  line-height: 1.15;
+}
+
+#tipografia {
+  margin-top: 20px;
+}
+#tipografia h2 {
+  color: #D14348;
+}
+#tipografia h3 {
+  color: #D14348;
+}
+#tipografia h4 {
+  color: #D14348;
+}
+#tipografia p {
+  color: #022933;
+}
+#tipografia blockquote {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+footer {
+  margin-top: 20px;
+}
+footer nav ul li a {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
